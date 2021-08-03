@@ -17,7 +17,7 @@ const App = () => {
     ]) 
 
     const renderArtistInfo = () => artists.map((m, i) => <Artist_Info key={i} name={m.name} music_type={m.music_type} intro={m.intro} />)
-    const renderSongs = () => albums.map((m,i) => <Songs key={i} albums={m.albums} release_date={m.release_date} artwork={m.artwork}/>)
+    const renderSongs = () => albums.map((m,i) => <Songs key={i} album={m.album} release_date={m.release_date} artwork={m.artwork}/>)
     return (
         <>
             {renderArtistInfo()}
