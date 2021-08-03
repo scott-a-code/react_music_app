@@ -2,6 +2,10 @@ import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
 import Artist_Info from './components/Artist_info';
 import Songs from './components/Songs';
+import eminemArt from './artwork/The_Eminem_Show.jpg';
+import aliceCooper from './artwork/Alice_Cooper.jpg';
+import Rob_C from './artwork/Rob_Cantor.jpg';
+
 
 const App = () => {
     const [ artists, setArtists ] = useState([
@@ -11,9 +15,9 @@ const App = () => {
     ])
 
     const [ albums, setSongs ] = useState ([
-        {album: "The Eminem Show", release_date: "2002", artwork: '../artwork/The_Eminem_Show.jpg'},
-        {album: "Hey Stoopid", release_date: "1991", artwork: '../artwork/Alice_Cooper.jpg'},
-        {album: "Not a Trampoline", release_date: "2014", artwork: '../artwork/Rob_Cantor.jpg'}
+        {album: "The Eminem Show", release_date: "2002", artwork: eminemArt},
+        {album: "Hey Stoopid", release_date: "1991", artwork: aliceCooper},
+        {album: "Not a Trampoline", release_date: "2014", artwork: Rob_C}
     ]) 
 
     const renderArtistInfo = () => artists.map((m, i) => <Artist_Info key={i} name={m.name} music_type={m.music_type} intro={m.intro} />)
