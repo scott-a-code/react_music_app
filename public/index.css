@@ -1,3 +1,31 @@
-body div{
-    width: 75%;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.artist,
+.album {
+  margin: 50px 20px;
+  border: 2px solid grey;
+  border-radius: 15px;
+  background-color: rgb(167, 233, 192);
+  height: auto;
+  width: auto;
+}
+.artist *,
+.album * {
+  margin: 20px;
+}
+
+.artist h1,
+.album h1 {
+  text-align: left;
+}
+
+.album img {
+  height: 300px;
+  width: auto;
 }
