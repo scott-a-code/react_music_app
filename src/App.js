@@ -6,7 +6,6 @@ import eminemArt from './artwork/The_Eminem_Show.jpg';
 import aliceCooper from './artwork/Alice_Cooper.jpg';
 import Rob_C from './artwork/Rob_Cantor.jpg';
 
-
 const App = () => {
     const [ artists, setArtists ] = useState([
         {name:"Eminem", music_type:"rap", intro:"He's the real slim shady"},
