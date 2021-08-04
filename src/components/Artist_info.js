@@ -1,9 +1,8 @@
-import React, { useState } from "react";
-import Songs from "./Songs";
+import React, { useState } from 'react';
 
-let trueOrFalse;
-const Artist_Info = ({ name, music_type, intro }) => {
-  let clicked = false;
+const Artist_Info = ({name, music_type, intro}) => {
+    
+let clicked = false;
 
   const toggleClick = (e) => {
     if (clicked) {
